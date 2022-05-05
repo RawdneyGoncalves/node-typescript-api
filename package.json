@@ -1,43 +1,59 @@
 {
   "name": "typescript-api",
   "version": "1.0.0",
-  "description": "complete api to surf",
+  "description": "Complete API built with Node.js and Typescript",
   "main": "index.js",
   "scripts": {
     "build": "tsc",
-    "start": "yarn build && node dist/index.js",
+    "start": "yarn build && node dist/src/index.js",
     "start:local": "ts-node-dev --transpile-only src/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint ./src ./test --ext .ts",
-    "lint:fix": "eslint ./src ./test --ext .ts --fix"
+    "lint:fix": "eslint ./src ./test --ext .ts --fix",
+    "test:functional": "jest --projects ./test --forceExit --runInBand"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/RawdneyGoncalves/node-typescript-api.git"
+    "url": "git+https://github.com/waldemarnt/node-typescript-api.git"
   },
   "keywords": [
+    "node",
     "nodejs",
     "typescript",
     "api"
   ],
-  "author": "Rawdney Gonçalves Mendes",
-  "license": "ISC",
+  "author": "Rawdney Mendes",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/RawdneyGoncalves/node-typescript-api/issues"
+    "url": "git+https://github.com/waldemarnt/node-typescript-api.git"
   },
-  "homepage": "https://github.com/RawdneyGoncalves/node-typescript-api#readme",
-  "devDependencies": {
-    "@types/jest": "^27.5.0",
-    "@types/module-alias": "^2.0.1",
-    "@types/node": "^17.0.30",
-    "@typescript-eslint/eslint-plugin": "^5.21.0",
-    "@typescript-eslint/parser": "^5.21.0",
-    "eslint": "^8.14.0",
-    "jest": "^28.0.3",
-    "ts-jest": "^28.0.1",
-    "typescript": "^4.6.4"
-  },
+  "homepage": "git+https://github.com/waldemarnt/node-typescript-api.git#readme",
   "dependencies": {
+    "@overnightjs/core": "^1.7.6",
+    "@types/express": "^4.17.13",
+    "body-parser": "^1.19.1",
+    "express": "^4.17.2",
     "module-alias": "^2.2.2"
+  },
+  "devDependencies": {
+    "@avv/eslint-plugin": "^1.2.2",
+    "@types/jest": "^27.0.3",
+    "@types/module-alias": "^2.0.1",
+    "@types/node": "16",
+    "@types/supertest": "^2.0.11",
+    "@typescript-eslint/eslint-plugin": "^5.22.0",
+    "@typescript-eslint/parser": "^5.22.0",
+    "eslint": "^8.14.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-typescript": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-react": "^7.29.4",
+    "eslint-plugin-react-hooks": "^4.5.0",
+    "jest": "^27.4.5",
+    "supertest": "^6.2.3",
+    "ts-jest": "^27.1.2",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.5.4"
   }
 }
