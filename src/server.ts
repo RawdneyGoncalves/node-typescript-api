@@ -6,7 +6,7 @@ import * as http from 'http';
 import expressPino from 'express-pino-logger';
 import cors from 'cors';
 import swaggerUi from 'swagger-ui-express';
-import { OpenApiValidator } from 'express-openapi-validator';
+import * as OpenApiValidator from'express-openapi-validator';
 import { OpenAPIV3 } from 'express-openapi-validator/dist/framework/types';
 import { ForecastController } from './controllers/forecast';
 import * as database from '@src/database';
