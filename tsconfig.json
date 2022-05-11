@@ -1,6 +1,10 @@
 {
   "compilerOptions": {
     "target": "es2019",
+    "typeRoots": [
+      "./custom_typings",
+      "./node_modules/@types"
+    ],
     "moduleResolution": "node",
     "module": "commonjs",
     "lib": ["es2019"],
@@ -32,7 +36,7 @@
   "include": [
     "./src/**/*.ts",
     "./test/**/*.ts"
-  ],
+, "server.ts"  ],
   "exclude": [
     "./node_modules/*",
     "dist"

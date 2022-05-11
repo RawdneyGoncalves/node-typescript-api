@@ -1,4 +1,4 @@
-import { User } from '@src/clients/__test__';
+import { User } from '@src/models/user';
 import AuthService from '@src/services/auth';
 
 describe('Users functional tests', () => {
